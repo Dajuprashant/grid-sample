@@ -6,140 +6,208 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@400;500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href=""> -->
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
       * {
         margin: 0px;
         padding: 0px;
+        box-sizing: border-box;
       }
 
       section {
-        margin: 20px;
-        padding: 5px;
+        font-style: calc(Pangolin);
+        width: 100%;
+        height: 300px;
+        background-color: #1e293b;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+      header {
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: #1e293b;
+        color: white;
+
+
       }
 
       a {
         text-decoration: none;
-        padding-right: 15px;
-        color: grey;
-        opacity: 90%;
+        padding: 20px;
+        color: rgb(245, 243, 243);
+        font-size: 1.2rem;
       }
 
-      a :hover {
-        color: green;
+      .info {
+        padding: 30px;
+        line-height: 35px;
+        font-size: 20px;
       }
 
-      header {
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 10px;
-        align-items: baseline;
-        margin: 15px;
+      .photo {
+        border-radius: 20px;
+      }
+
+      input {
+        font-size: 17px;
+        width: 45%;
+        border-radius: 10px;
+      }
+
+      /* button {
+        width: 140px;
+      } */
+      .maingrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        /* border: 1px solid grey; */
+        column-gap: 10px;
+        margin: 30px;
       }
 
       .grid {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 50px;
-      }
-
-      .card1 {
-        grid-column: span 2;
-        /* text-align: center; */
-        padding-top: 70px;
-      }
-
-      .card {
-        border: 1px solid black;
-        border-radius: 5px;
+        justify-items: center;
+        border: 1px solid grey;
         padding: 20px;
-        justify-content: center;
-        box-shadow: 5px 5px 5px;
-        word-spacing: 5px;
-
       }
 
-      .card1 :hover {
-        background-color: rgb(74, 216, 74);
+      .footergrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        margin: 30px;
+        row-gap: 10px;
       }
 
-      .card :hover {
-        background-color: aquamarine;
+      .people {
+        border: 1px solid black;
+        background-color: #1e293b;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 20px;
       }
 
-      .item2 {
-        grid-column: span 1;
+      .foot {
+        border-radius: 50px;
+        display: inline-block;
+        padding: 10px;
       }
     </style>
   </head>
 
   <body>
-    <!-- <div class="header"> -->
+
+
     <header>
+      <h1>Skillz</h1>
+      <div class="topitem">
+        <a href="Log in">Log in</a>
+        <a href="check in">Check Course</a>
 
-      <strong>
-        <h1>Sample Grid</h1>
-      </strong>
-      <div>
-
-        <a href="flex.html">flex Sample</a>
-        <a href="web.html">Mindrisers</a>
-        <a href="CONTACT">CONTACT</a>
       </div>
     </header>
-    <!-- </div> -->
     <section>
-
-      <div class="main grid">
-        <div class="info">
-          <img src="You.jpg" alt="" width="500px" height="300px">
-        </div>
-        <div class="card1">
-          <h1><strong> Sample Grid</strong></h1>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ratione cum fugit? Lorem ipsum,
-            dolor sit amet consectetur adipisicing elit. Odio reprehenderit ullam sequi ut ducimus in natus earum
-            veritatis non commodi.
-          </p>
-        </div>
-        <div class="card item2">
-          <h1>Sample Grid 1</h1>
-          <br>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ratione cum Lorem ipsum dolor sit
-            amet
-            consectetur adipisicing elit. Sint, reiciendis officiis molestiae obcaecati consectetur dolorum temporibus
-            veniam rem quae explicabo pariatur necessitatibus corporis esse maxime! Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Temporibus vel velit minima in vitae harum ex saepe autem quae corrupti.
-            Similique qui quas dignissimos obcaecati.
-            fugit?</p>
-        </div>
-        <div class=" card">
-          <h1>Sample Grid2</h1>
-          <br>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ratione cum Lorem ipsum dolor sit
-            amet
-            consectetur adipisicing elit. Sint, reiciendis officiis molestiae obcaecati consectetur dolorum temporibus
-            veniam rem quae explicabo pariatur necessitatibus corporis esse maxime! Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Temporibus vel velit minima in vitae harum ex saepe autem quae corrupti.
-            Similique qui quas dignissimos obcaecati.
-            fugit?</p>
-        </div>
-        <div class=" card">
-          <h1>Sample Grid 3</h1>
-          <br>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ratione cum Lorem ipsum dolor sit
-            amet
-            consectetur adipisicing elit. Sint, reiciendis officiis molestiae obcaecati consectetur dolorum temporibus
-            veniam rem quae explicabo pariatur necessitatibus corporis esse maxime! Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Temporibus vel velit minima in vitae harum ex saepe autem quae corrupti.
-            Similique qui quas dignissimos obcaecati.
-            fugit?</p>
-        </div>
+      <div class="info">
+        <h1>
+          Learn any digital skill of your choice today
+        </h1>
+        <p>Over 30000 students currently learn with us</p>
+        <span>
+          <input type="text" placeholder="enter your email address">
+        </span>
+        Start learning
+        <br>
+        <p>Try out our free courses.No risk, no credit card required</p>
 
       </div>
+      <div>
 
+        <img src="You.jpg" alt="" class="photo" width="450px" height="350px">
+      </div>
     </section>
+    <br><br><br><br>
+    <div class="maingrid">
+      <div class="first grid">
+        <img src="folder.jpg.svg" alt="" width="30px" height="30px" class="sign">
+        <h2>Over 300 available courses</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error quidem inventore ratione qui totam.
+          Tempora voluptatem voluptas blanditiis atque nihil illo facere. Eum repellat enim accusamus, inventore esse
+          harum similique possimus distinctio? Nisi nostrum cum non rem illo neque, sequi illum possimus corrupti.
+          Debitis?</p>
+      </div>
+      <div class="second grid">
+        <img src="graduation-cap.jpg.svg" alt="" width="30px" height="30px" class="sign">
+        <h2>Free certificate offered on all courses</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error quidem inventore ratione qui totam.
+          Tempora voluptatem voluptas blanditiis atque nihil illo facere. Eum repellat enim accusamus, inventore esse
+          harum similique possimus distinctio? Nisi nostrum cum non rem illo neque, sequi illum possimus corrupti.
+          Debitis?</p>
+      </div>
+      <div class="Third grid">
+        <img src="book-solid.svg" alt="" width="30px" height="30px" class="sign">
+        <h2>Book 1 on 1 session as low as $5</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error quidem inventore ratione qui totam.
+          Tempora voluptatem voluptas blanditiis atque nihil illo facere. Eum repellat enim accusamus, inventore esse
+          harum similique possimus distinctio? Nisi nostrum cum non rem illo neque, sequi illum possimus corrupti.
+          Debitis?</p>
+      </div>
+    </div>
+    <div class="footergrid">
+      <div class="people">
+        <img src="photo1.avif" alt="" width="70px" height="70px" class="foot">
+        Ryan Florence
+        <p>I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+      <div class="people">
+        <div class="abc">
+          <div>
+
+            <img src="photo1.avif" alt="" width="70px" height="70px" class="foot">
+            Debbie
+          </div>
+          <div>
+
+            <p>Have been working with CSS for over ten years and Tailwind just makes my life easier. It is still CSS and
+              you
+              use flex grid etc but just quicker to write and maintain. You should give it a try</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="people">
+        <img src="photo1.avif" alt="" width="70px" height="70px" class="foot">
+        Shruti Balasa
+        <p>With Tailwind I can offer my clients faster turnaround times on custom WordPress themes, both for initial
+          builds and for future revisions.</p>
+      </div>
+      <div class="people">
+        <img src="photo1.avif" alt="" width="70px" height="70px" class="foot">
+        Sara Vieira
+        <p>I have no design skills and with Tailwind I can actually make good looking websites with ease and it's
+          everything I ever wanted in a CSS framework.</p>
+      </div>
+      <div class="people">
+        <img src="photo1.avif" alt="" width="70px" height="70px" class="foot">
+        Sarah Dayan
+        <p>Tailwind CSS is bridging the gap between design systems and products. It's becoming the defacto API for
+          styling.</p>
+      </div>
+    </div>
   </body>
 
 </html>

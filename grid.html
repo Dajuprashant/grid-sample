@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      section {
+        margin: 20px;
+        padding: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        padding-right: 15px;
+        color: grey;
+        opacity: 90%;
+      }
+
+      a :hover {
+        background-color: yellowgreen;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        align-items: baseline;
+        margin: 15px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 50px;
+      }
+
+      .card1 {
+        grid-column: span 2;
+        /* text-align: center; */
+        padding-top: 70px;
+      }
+
+      .card {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        justify-content: center;
+        box-shadow: 5px 5px 5px;
+        word-spacing: 5px;
+
+      }
+
+      .card1 :hover {
+        background-color: rgb(74, 216, 74);
+      }
+
+      .card :hover {
+        background-color: aquamarine;
+      }
+
+      .item2 {
+        grid-column: span 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class="header"> -->
+    <header>
+
+      <strong>
+        <h1>Sample Grid</h1>
+      </strong>
+      <div>
+
+        <a href="flex.html">flex Sample</a>
+        <a href="web.html">Mindrisers</a>
+        <a href="CONTACT">CONTACT</a>
+      </div>
+    </header>
+    <!-- </div> -->
+    <section>
+
+      <div class="main grid">
+        <div class="info">
+          <img src="You.jpg" alt="" width="500px" height="300px">
+        </div>
+        <div class="card1">
+          <h1><strong> Sample Grid</strong></h1>
+          <br>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ratione cum fugit? Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Odio reprehenderit ullam sequi ut ducimus in natus earum
+            veritatis non commodi.
+          </p>
+        </div>
+        <div class="card item2">
+          <h1>Sample Grid 1</h1>
+          <br>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ratione cum Lorem ipsum dolor sit
+            amet
+            consectetur adipisicing elit. Sint, reiciendis officiis molestiae obcaecati consectetur dolorum temporibus
+            veniam rem quae explicabo pariatur necessitatibus corporis esse maxime! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Temporibus vel velit minima in vitae harum ex saepe autem quae corrupti.
+            Similique qui quas dignissimos obcaecati.
+            fugit?</p>
+        </div>
+        <div class=" card">
+          <h1>Sample Grid2</h1>
+          <br>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ratione cum Lorem ipsum dolor sit
+            amet
+            consectetur adipisicing elit. Sint, reiciendis officiis molestiae obcaecati consectetur dolorum temporibus
+            veniam rem quae explicabo pariatur necessitatibus corporis esse maxime! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Temporibus vel velit minima in vitae harum ex saepe autem quae corrupti.
+            Similique qui quas dignissimos obcaecati.
+            fugit?</p>
+        </div>
+        <div class=" card">
+          <h1>Sample Grid 3</h1>
+          <br>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ratione cum Lorem ipsum dolor sit
+            amet
+            consectetur adipisicing elit. Sint, reiciendis officiis molestiae obcaecati consectetur dolorum temporibus
+            veniam rem quae explicabo pariatur necessitatibus corporis esse maxime! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Temporibus vel velit minima in vitae harum ex saepe autem quae corrupti.
+            Similique qui quas dignissimos obcaecati.
+            fugit?</p>
+        </div>
+
+      </div>
+
+    </section>
+  </body>
+
+</html>

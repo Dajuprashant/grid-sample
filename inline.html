@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and block element</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .contain {
+        display: flex;
+        border: 2px solid black;
+        background-color: green;
+        justify-content: flex-start;
+      }
+
+      .item {
+        background-color: gray;
+        border: 2px solid red;
+        margin: 5px;
+        padding-right: 10px;
+        border-radius: 5px;
+
+      }
+
+      .item :hover {
+        background-color: yellow;
+
+      }
+
+      body {
+        font-family: 'Pangolin', cursive;
+      }
+
+      #id {
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contain">
+
+      <div class="item">
+
+        home
+      </div>
+      <div class="item">
+
+        About
+      </div>
+      <div class="item">
+
+        contact us
+      </div>
+      <div class="item">
+
+        More information
+      </div>
+      <textarea name="search" id="search" cols="10" rows="1" placeholder="Search box"> </textarea>
+    </div>
+  </body>
+
+</html>
